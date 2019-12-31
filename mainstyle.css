@@ -1,3 +1,16 @@
+.normalbutton, .warningbutton {
+  color: black;
+  border: 5px solid cornsilk;
+  width: 25%;
+  height: 100px; }
+
+@media (max-width: 1000px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap; }
+    .container td {
+      width: 400px;
+      padding-top: 10px; } }
 html, body {
   height: 100%; }
 
@@ -5,6 +18,12 @@ body {
   background-color: cadetblue;
   color: cornsilk;
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+.normalbutton {
+  background-color: greenyellow; }
+
+.warningbutton {
+  background-color: orange; }
 
 h1, .maintext {
   text-align: center; }
@@ -35,6 +54,6 @@ a:visited {
   color: cornsilk; }
 
 a:hover {
-  color: yellow; }
+  color: greenyellow; }
 
 /*# sourceMappingURL=mainstyle.css.map */

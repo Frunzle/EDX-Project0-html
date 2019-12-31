@@ -1,5 +1,26 @@
 $objectscolor:cornsilk;
 
+%buttonlayout {
+   color: black;
+    border: 5px solid $objectscolor;
+    width: 25%;
+    height: 100px;
+}
+
+@media (max-width:1000px){
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+
+        td{
+            width: 400px; 
+            padding-top: 10px;
+        }
+    }                
+    
+}
+
 html, body{
 
     height: 100%;
@@ -10,6 +31,15 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.normalbutton {
+    @extend %buttonlayout;
+    background-color: greenyellow;
+}
+
+.warningbutton {
+    @extend %buttonlayout;
+    background-color: orange;    
+}
 
 h1, .maintext{
 text-align: center;
@@ -41,11 +71,15 @@ width: 100%;
 text-align: center;
 border: 2px solid $objectscolor ;
 }
+
+
 a:visited{
     color: $objectscolor;
 }
 a:hover{
-color:yellow;
+color:greenyellow;
 }
+
+
 
 
